@@ -1,7 +1,7 @@
 {
   "name": "vanilla-web-components",
   "description": "Vanilla Framework custom elements",
-  "main": "vanilla-web-components.html",
+  "main": "vanilla.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
   },
