@@ -1,0 +1,36 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!--
+Example:
+    <vanilla-breadcrumbs>
+      <a href="#">Breadcrumb1</a>
+      <a href="#">Breadcrumb2</a>
+      <a href="#">Breadcrumb3</a>
+      <a href="#">Breadcrumb4</a>
+    </vanilla-breadcrumbs>
+
+@demo demo/vanilla-breadcrumbs.html
+-->
+
+<dom-module id="vanilla-breadcrumbs">
+  <template>
+    <link rel="stylesheet" href="css/vanilla-breadcrumbs.css">
+
+    <div id="wrapper" style="margin:2rem;">
+      <nav class="p-breadcrumbs">
+        <content id="content"></content>
+      </nav>
+    <div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'vanilla-breadcrumbs',
+
+      ready: function() {
+        let content = Polymer.dom(this.$.content);
+        content.children.toggleClass('p-breadcrumbs__link', true);
+      },
+    });
+  </script>
+</dom-module>
