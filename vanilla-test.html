@@ -1,29 +1,13 @@
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <dom-module id="vanilla-test">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]</h2>
-
-    <link rel="stylesheet" href="my-element.css">
+    <link rel="stylesheet" href="css/vanilla-test.css">
   </template>
 
   <script>
     Polymer({
-
-      is: 'vanilla-web-components',
-
-      properties: {
-        prop1: {
-          type: String,
-          value: 'vanilla-web-components',
-        },
-      },
-
+      is: 'vanilla-test',
     });
   </script>
 </dom-module>

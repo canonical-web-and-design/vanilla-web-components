@@ -13,20 +13,28 @@
   },
   "homepage": "https://github.com/vanilla-framework/vanilla-web-components#readme",
   "dependencies": {
-    "npm-run-all": "^4.0.1"
+    "npm-run-all": "^4.0.1",
+    "vanilla-framework": "^1.1.7"
   },
   "devDependencies": {
     "eslint": "^3.14.1",
     "eslint-config-google": "^0.7.1",
     "eslint-plugin-html": "^2.0.0",
+    "glob-run": "^0.1.6",
+    "node-sass": "^4.5.0",
     "stylelint": "^7.7.1",
     "stylelint-config-polymer": "0.0.1",
-    "stylelint-processor-html": "^1.0.0"
+    "stylelint-processor-html": "^1.0.0",
+    "vulcanize": "^1.15.3"
   },
   "scripts": {
+    "build": "npm-run-all -s sass vulcanize",
     "lint": "npm-run-all lint-js lint-style",
     "lint-js": "eslint '*.html'",
     "lint-style": "stylelint 'sass/**/*.sass'",
-    "test": "npm test"
+    "sass": "node-sass --recursive --output static/css sass/*",
+    "test": "npm test",
+    "vulcanize": "glob-run vulcanize --inline-css 'vanilla-*.html' --out-html 'build/*'",
+    "watch": "node-sass --watch --recursive --output static/css sass/*"
   }
 }
