@@ -32,9 +32,10 @@
     "lint": "npm-run-all lint-js lint-style",
     "lint-js": "eslint '*.html'",
     "lint-style": "stylelint 'sass/**/*.sass'",
-    "sass": "node-sass --recursive --output static/css sass/*",
+    "sass": "node-sass sass/ --recursive --output css sass/* --include-path 'node_modules/'",
+    "sass-watch": "node-sass sass/ --recursive --watch --output css sass/* --include-path 'node_modules/'",
     "test": "npm test",
     "vulcanize": "glob-run vulcanize --inline-css 'vanilla-*.html' --out-html 'build/*'",
-    "watch": "node-sass --watch --recursive --output static/css sass/*"
+    "watch": "sass-watch"
   }
 }
