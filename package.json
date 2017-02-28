@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-web-components",
+  "version": "1.0.0",
+  "description": "An exploration of Vanilla using Web Components",
+  "main": "",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanilla-framework/vanilla-web-components"
+  },
+  "author": "Canonical Web Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanilla-framework/vanilla-web-components/issues"
+  },
+  "homepage": "https://github.com/vanilla-framework/vanilla-web-components#readme"
+}
