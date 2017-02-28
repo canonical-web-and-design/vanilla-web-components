@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`vanilla-web-components`
+Vanilla Framework custom elements
+
+@demo demo/index.html 
+-->
+
+<dom-module id="vanilla-web-components">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'vanilla-web-components',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'vanilla-web-components',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
