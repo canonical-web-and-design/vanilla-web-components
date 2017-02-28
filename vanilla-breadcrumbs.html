@@ -28,8 +28,10 @@ Example:
       is: 'vanilla-breadcrumbs',
 
       ready: function() {
-        let content = Polymer.dom(this.$.content);
-        content.children.toggleClass('p-breadcrumbs__link', true);
+        let linkNodes = this.getContentChildren('#content');
+        linkNodes.forEach(function(linkNode) {
+          linkNode.classList.add('p-breadcrumbs__link');
+      });
       },
     });
   </script>
