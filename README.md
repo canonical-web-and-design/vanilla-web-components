@@ -1,3 +1,9 @@
+***Deprecated and archived***
+
+*We no longer use this, and it is no longer actively maintained.*
+
+---
+
 # vanilla-web-components
 
 An exploration of Vanilla using Web Components
